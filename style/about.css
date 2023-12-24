@@ -1,0 +1,222 @@
+.hero {
+  background: linear-gradient(
+      var(--linear-gradient-color),
+      var(--linear-gradient-color)
+    ),
+    url(../images/sections-bg.png) center/cover no-repeat;
+}
+.hero-container {
+  min-height: 200px;
+}
+.hero img {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.mobility,
+.urban {
+  margin: clamp(72px, 8.33px, 120px) auto;
+}
+.mobility::after,
+.urban::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-color: var(--coconut-white-color);
+}
+.mobility::after {
+  right: -480px;
+  right: -390px;
+}
+.urban::before {
+  left: -390px;
+}
+.mobility-content h2,
+.urban h2 {
+  max-width: 445px;
+}
+.mobility-content p,
+.urban p {
+  margin-top: 24px;
+  max-width: 445px;
+}
+.mobility-image,
+.urban-image {
+  width: clamp(311px, 30.9vw, 445px);
+  height: clamp(311px, 30.9vw, 445px);
+  border-radius: 50%;
+}
+.mobility-image {
+  background: url(../images/mobility-image.png) center/cover no-repeat;
+}
+.urban-image {
+  background: url(../images/urban-image.png) center/cover no-repeat;
+}
+.mobility-image img {
+  z-index: 1;
+  bottom: 38px;
+  right: -182px;
+}
+.urban-image img {
+  z-index: 1;
+  top: 0px;
+  left: -170px;
+}
+.value{
+  margin: clamp(72px, 8.33px, 120px) auto;
+}
+.value-cards-wrapper {
+  margin-top: clamp(46px, 7.15vw, 103px);
+  gap: 55px 25px;
+}
+.value-card {
+  max-width: 350px;
+}
+.value-card img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+.value-card-image::after {
+  position: absolute;
+  content: "";
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-navy-color);
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: 700;
+}
+.value-card:nth-child(1) .value-card-image::after{
+  content: "01";
+}
+.value-card:nth-child(2) .value-card-image::after{
+  content: "02";
+}
+.value-card:nth-child(3) .value-card-image::after{
+  content: "03";
+}
+.value-card-content {
+  margin-top: clamp(64px, 6.06vw, 87px);
+}
+.value-card-content p {
+  margin-top: 27px;
+}
+.faq{
+  margin: clamp(72px, 8.33px, 120px) auto;
+}
+.question{
+  margin-top: clamp(48px, 4.44vw, 64px);
+  align-items: flex-start;
+  gap: 32px 20px;
+}
+.question h3{
+font-size: clamp(24px, 2.77vw, 40px);
+letter-spacing: -1.786px;
+max-width: 350px;
+flex-shrink: 0;
+}
+.answer{
+  width: 730px;
+}
+.answer details{
+  padding: 32px clamp(32px, 5.47vw, 40px);
+  background-color: var(--details-color);
+  margin-bottom: 16px;
+}
+.answer summary{
+  list-style: none;
+  align-items: center;
+font-size: clamp(18px, 1.66vw, 24px);
+letter-spacing: -1.071px;
+}
+.answer summary::after{
+  content: url(../images/details-arrow.svg);
+  rotate: 180deg;
+  transition: all 0.6S;
+  margin-bottom: -5px;
+  margin: 0 0 -5px 16px;
+}
+.answer details[open] summary::after{
+  rotate: 0deg;
+}
+.answer details:is([open], :hover){
+  background-color: #FFF4DF;
+}
+.answer p{
+  padding-top: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .mobility {
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+  .urban {
+    flex-direction: column;
+  }
+  .mobility,
+  .urban {
+    justify-content: center;
+    align-content: center;
+    row-gap: 56px;
+  }
+  .mobility-content,
+  .urban-content {
+    text-align: center;
+  }
+  .mobility-content h2,
+  .urban-content h2 {
+    max-width: 357px;
+    margin: 0 auto;
+  }
+  .mobility-content p,
+  .mobility-content p {
+    max-width: 573px;
+  }
+  .mobility-image img {
+    bottom: 18px;
+    right: -282px;
+  }
+  .urban-image img {
+    top: -35px;
+    left: -225px;
+  }
+  .question{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .question h3{
+    flex-shrink: 1;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .hero-container {
+    justify-content: center;
+  }
+  .hero img {
+    display: none;
+  }
+  .mobility::after,
+  .urban::before {
+    display: none;
+  }
+  .mobility-image img {
+    right: -432px;
+  }
+  .urban-image img {
+    top: -10px;
+    left: -45px;
+  }
+}
