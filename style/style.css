@@ -63,6 +63,7 @@ h2 {
 }
 main {
   margin-top: clamp(64px, 6.5vw, 100px);
+  overflow-x: hidden;
 }
 footer {
   background-color: var(--gunmetal-color);
