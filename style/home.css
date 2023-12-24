@@ -3,7 +3,7 @@
       var(--linear-gradient-color),
       var(--linear-gradient-color)
     ),
-    url(../images/hero-home-bg.png) center/cover no-repeat;
+    url(../images/hero-home-bg.png) center right/cover no-repeat;
 }
 .hero-container {
   min-height: 650px;
