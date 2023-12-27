@@ -105,8 +105,14 @@
   border: 7px var(--coconut-white-color) solid;
   z-index: -1;
 }
-.yellow-circle::before {
+.home-card:nth-child(1) .yellow-circle::before {
   content: url(../images/yellow.svg);
+}
+.home-card:nth-child(2) .yellow-circle::before {
+  content: url(../images/yellow-two.svg);
+}
+.home-card:nth-child(3) .yellow-circle::before {
+  content: url(../images/yellow-three.svg);
 }
 .home-card-content h3 {
   letter-spacing: -1.071px;
