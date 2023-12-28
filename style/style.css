@@ -43,7 +43,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 15;
   background-color: var(--white-color);
   box-shadow: 0px -52px 90px 10px var(--black-color);
 }
@@ -207,6 +207,7 @@ footer {
     border: 3px solid var(--yellow-color);
   }
   .burger-menu {
+    display: flex;
     top: 64px;
     left: 0;
     background-color: var(--gunmetal-color);
@@ -215,8 +216,8 @@ footer {
     height: 603px;
     transform: translate(-100%, 0);
     align-content: space-between;
-    padding: 64px 0px 24px 32px;
-    transition: all 1.2s !important;
+    padding: 64px 32px 24px;
+    transition: all 0.9s;
     z-index: 5;
   }
   .burger-input:checked + .burger-menu {
