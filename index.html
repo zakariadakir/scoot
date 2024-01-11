@@ -4,136 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./style/output.css">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/home.css">
   <title>Scoot - Home</title>
 </head>
 <body>
-  <header>
-    <div class="header-container container d-flex items-center justify-between">
-      <label class="burger-icon d-none flex-col" for="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <input class="burger-input d-none" type="checkbox" id="burger" name="burger">
-      <div class="burger-menu d-none absolute d-flex flex-col justify-between ">
-        <nav class="burger-nav">
-          <ul class="d-flex flex-col">
-            <li><a href="./pages/about.html" class="space-mono bold cursor transition-6s">About</a></li>
-            <li><a href="./pages/location.html" class="space-mono bold cursor transition-6s">Location</a></li>
-            <li><a href="./pages/careers.html" class="space-mono bold cursor transition-6s">Careers</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="button cursor transition-6s">Get Scootin</a>
-      </div>
-      <div class="logo-nav d-flex items-center justify-between">
-        <a href="./index.html" class="logo cursor"><img src="./images/header-logo.png" alt="logo"></a>
-        <nav class="nav">
-          <ul class="d-flex items-center justify-between">
-            <li><a href="./pages/about.html" class="space-mono bold font-15 cursor transition-6s">About</a></li>
-            <li><a href="./pages/location.html" class="space-mono bold font-15 cursor transition-6s">Location</a></li>
-            <li><a href="./pages/careers.html" class="space-mono bold font-15 cursor transition-6s">Careers</a></li>
+  <header class="fixed bg-white top-0 left-0 z-50 w-full shadow-3xl">
+    <div class="header-container main-container flex items-center justify-between">
+      <div class="logo-nav flex items-center justify-center gap-x-14 max-tablet:w-full">
+        <div class="burger-bar hidden max-tablet:flex max-tablet:items-center max-tablet:justify-center max-tablet:flex-col max-tablet:gap-1 max-tablet:cursor-scoot">
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+        </div>
+        <a href="../index.html" class="logo max-tablet:my-0 mx-auto">
+          <img src="../imgs/logo.svg" alt="logo">
+        </a>
+        <nav class="max-tablet:hidden">
+          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold ">
+            <li><a href="./pages/about.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">About</a></li>
+            <li><a href="./pages/location.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">Location</a></li>
+            <li><a href="./pages/careers.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <a href="#" class="button header-button cursor transition-6s">Get Scootin</a>
+      <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot max-tablet:hidden">Get Scootin</a>
     </div>
   </header>
   <main>
     <section class="hero relative">
-      <div class="hero-container container relative d-flex items-center">
-        <div class="hero-content d-flex flex-col items-center">
+      <div class="hero-container main-container relative flex items-center">
+        <div class="hero-content flex flex-col items-center">
           <h1 class="text-white">Scooter sharing made simple</h1>
-          <p class="text-white lexend-deca font-15">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
-          <a href="#" class="button transition-6s cursor">Get Scootin</a>
+          <p class="text-white font-lexend-deca text-15">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+          <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+          cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot max-tablet:hidden">Get Scootin</a>
         </div>
-        <img class="absolute yellow-line" src="./images/line-home-hero.svg" alt="yellow-line">
-        <img class="absolute yellow-arrow" src="./images/arrow-home-hero.png" alt="yellow-arrow">
+        <img class="absolute yellow-line" src="./imgs/line-home-hero.svg" alt="yellow-line">
+        <img class="absolute yellow-arrow" src="./imgs/arrow-home-hero.png" alt="yellow-arrow">
       </div>
-      <img class="circle-hero absolute" src="./images/circle-home-hero.svg" alt="circle">
+      <img class="circle-hero absolute" src="./imgs/circle.svg" alt="circle">
     </section>
-    <section class="home-cards-wrapper container d-flex items-center justify-center">
+    <section class="home-cards-wrapper main-container flex items-center justify-center">
       <article class="home-card">
         <div class="yellow-circle"></div>
         <div class="home-card-content">
-        <h3 class="text-dark-navy space-mono">Locate with app</h3>
-        <p class="text-grey lexend-deca font-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+        <h3 class="text-navy-scoot font-space-mono">Locate with app</h3>
+        <p class="text-grey-scoot font-lexend-deca text-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
         </div>
       </article>
       <article class="home-card relative">
         <span class="absolute"></span>
         <div class="yellow-circle"></div>
         <div class="home-card-content">
-        <h3 class="text-dark-navy space-mono">Locate with app</h3>
-        <p class="text-grey lexend-deca font-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+        <h3 class="text-navy-scoot font-space-mono">Locate with app</h3>
+        <p class="text-grey-scoot font-lexend-deca text-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
         </div>
       </article>
       <article class="home-card">
         <div class="yellow-circle"></div>
         <div class="home-card-content">
-        <h3 class="text-dark-navy space-mono">Locate with app</h3>
-        <p class="text-grey lexend-deca font-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+        <h3 class="text-navy-scoot font-space-mono">Locate with app</h3>
+        <p class="text-grey-scoot font-lexend-deca text-15">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
         </div>
       </article>
     </section>
-    <section class="easy home-section container d-flex items-center justify-between flex-wrap relative">
-      <div class="home-section-content">
-        <h2>Easy to use riding telemetry</h2>
-        <p class="text-grey font-15 lexend-deca">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
-        <a href="#" class="button transition-6s cursor">Learn More</a>
+    <section class="easy main-container flex justify-between items-center flex-wrap relative max-laptop:flex-col-reverse max-laptop:justify-center max-laptop:items-center max-laptop:gap-y-14">
+      <div class="easy-content max-laptop:text-center">
+        <h2 class="my-0 mx-auto">easy to join our mission?</h2>
+        <p class="text-grey-scoot text-15 font-lexend-deca">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+        <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot">Say Hello</a>
       </div>
-      <div class="home-section-image easy-image relative">
-        <img class="absolute" src="./images/easy-right-arrow.svg" alt="yellow-right-arrow">
-      </div>
-    </section>
-    <section class="coming home-section container d-flex items-center justify-between flex-wrap relative">
-      <div class="home-section-image coming-image relative">
-        <img class="absolute" src="./images/coming-left-arrow.svg" alt="yellow-left-arrow">
-      </div>
-      <div class="home-section-content">
-        <h2>Coming to a city near you</h2>
-        <p class="text-grey font-15 lexend-deca">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
-        <a href="#" class="button transition-6s cursor">Learn More</a>
+      <div class="easy-image section-image relative">
+        <img class="absolute" src="./imgs/care-right-arrow.svg" alt="yellow-right-arrow">
       </div>
     </section>
-    <section class="zero home-section container d-flex items-center justify-between flex-wrap relative">
-      <div class="home-section-content">
-        <h2>Zero hassle payments</h2>
-        <p class="text-grey font-15 lexend-deca">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
-        <a href="#" class="button transition-6s cursor">Learn More</a>
+    <section class="coming main-container flex justify-between items-center flex-wrap relative max-laptop:justify-center max-laptop:items-center max-laptop:gap-y-14">
+      <div class="coming-image section-image relative">
+        <img class="absolute" src="./imgs/arrow-home-hero.png" alt="yellow-right-arrow">
       </div>
-      <div class="home-section-image zero-image relative">
-        <img class="absolute" src="./images/easy-right-arrow.svg" alt="yellow-right-arrow">
+      <div class="coming-content max-laptop:text-center">
+        <h2 class="my-0 mx-auto">coming to join our mission?</h2>
+        <p class="text-grey-scoot text-15 font-lexend-deca">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+        <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot">Say Hello</a>
+      </div>
+    </section>
+    <section class="zero main-container flex justify-between items-center flex-wrap relative max-laptop:flex-col-reverse max-laptop:justify-center max-laptop:items-center max-laptop:gap-y-14">
+      <div class="zero-content max-laptop:text-center">
+        <h2 class="my-0 mx-auto">zero to join our mission?</h2>
+        <p class="text-grey-scoot text-15 font-lexend-deca">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+        <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot">Say Hello</a>
+      </div>
+      <div class="zero-image section-image relative">
+        <img class="absolute" src="./imgs/care-right-arrow.svg" alt="yellow-right-arrow">
       </div>
     </section>
     <section class="application">
-      <div class="application-container container d-flex items-center justify-between flex-wrap">
+      <div class="application-container main-container flex items-center justify-between flex-wrap max-laptop:justify-center max-laptop:text-center">
         <h2 class="text-white">Sign up and Scoot off today</h2>
-        <div class="install-app d-flex items-center justify-center flex-wrap">
-          <a href="#" class="cursor"><img src="../images/app-store.png" alt="app-store"></a>
-          <a href="#" class="cursor"><img src="../images/google-play.png" alt="google-play"></a>
+        <div class="install-app flex items-center justify-center flex-wrap">
+          <a href="#" class="cursor-scoot"><img src="./imgs/app-store.png" alt="app-store"></a>
+          <a href="#" class="cursor-scoot"><img src="./imgs/google-play.png" alt="google-play"></a>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="footer-container container d-flex items-center justify-between flex-wrap">
-      <div class="logo-nav-footer d-flex items-center justify-between text-grey">
-        <a href="./index.html" class="logo-footer cursor"><img src="./images/footer-logo.png" alt=""></a>
-        <nav class="nav">
-          <ul class="d-flex items-center justify-between">
-            <li><a href="./pages/about.html" class="space-mono bold font-15 cursor transition-6s">About</a></li>
-            <li><a href="./pages/location.html" class="space-mono bold font-15 cursor transition-6s">Location</a></li>
-            <li><a href="./pages/careers.html" class="space-mono bold font-15 cursor transition-6s">Careers</a></li>
+    <div class="footer-container main-container flex items-center justify-between flex-wrap max-tablet:flex-col max-tablet:justify-center">
+      <div class="logo-nav-footer flex items-center justify-center gap-x-14 max-tablet:flex-col">
+        <a href="../index.html" class="logo-footer cursor"><img src="./imgs/footer-logo.png" alt=""></a>
+        <nav>
+          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold max-tablet:flex-col">
+            <li><a href="./pages/about.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">About</a></li>
+            <li><a href="./pages/location.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">Location</a></li>
+            <li><a href="./pages/careers.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <div class="social-media d-flex items-center justify-center">
-        <a href="#" class="cursor"><i class="fa-brands fa-facebook-f text-grey transition-6s"></i></a>
-        <a href="#" class="cursor"><i class="fa-brands fa-x-twitter text-grey transition-6s"></i></a>
-        <a href="#" class="cursor"><i class="fa-brands fa-instagram text-grey transition-6s"></i></a>
-      </div>
+      <ul class="social-media flex items-center justify-center text-grey-scoot">
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-facebook-f transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-x-twitter transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-instagram transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+      </ul>
     </div>
   </footer>
 </body>

@@ -3,7 +3,7 @@
       var(--linear-gradient-color),
       var(--linear-gradient-color)
     ),
-    url(../images/hero-home-bg.png) center right/cover no-repeat;
+    url(../imgs/hero-home-bg.png) center right/cover no-repeat;
 }
 .hero-container {
   min-height: 650px;
@@ -49,13 +49,13 @@
   z-index: -1;
 }
 .home-card:nth-child(1) .yellow-circle::before {
-  content: url(../images/yellow.svg);
+  content: url(../imgs/yellow.svg);
 }
 .home-card:nth-child(2) .yellow-circle::before {
-  content: url(../images/yellow-two.svg);
+  content: url(../imgs/yellow-two.svg);
 }
 .home-card:nth-child(3) .yellow-circle::before {
-  content: url(../images/yellow-three.svg);
+  content: url(../imgs/yellow-three.svg);
 }
 .home-card-content h3 {
   letter-spacing: -1.071px;
@@ -76,28 +76,8 @@
   height: 445px;
   border-radius: 50%;
 }
-.easy::after,
-.zero::after {
-  right: -390px;
-  background-color: var(--coconut-white-color);
-}
-.coming::before {
-  left: -390px;
-  background-color: var(--coconut-white-color);
-}
 .home-section-image img {
   z-index: 1;
-}
-.easy img {
-  top: 295px;
-  left: -120px;
-}
-.coming img {
-  left: -550px;
-}
-.zero img {
-  top: 80px;
-  left: 250px;
 }
 .home-section-content {
   max-width: 445px;
@@ -113,14 +93,82 @@
   height: clamp(311px, 30.9vw, 445px);
   border-radius: 50%;
 }
+.easy, .coming, .zero {
+  margin: clamp(72px, 8.33px, 120px) auto;
+}
+.easy-content,
+.coming-content,
+.zero-content{
+  max-width: 445px;
+}
+.easy-content h2,
+.coming-content h2,
+.zero-content h2 {
+  max-width: 445px;
+}
+.easy-content p,
+.coming-content p,
+.zero-content p {
+  margin: 24px 0 40px;
+}
+.section-image {
+  width: clamp(311px, 30.9vw, 445px);
+  height: clamp(311px, 30.9vw, 445px);
+  border-radius: 50%;
+}
+.easy::after,
+.zero::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -390px;
+  transform: translateY(-50%);
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-color: var(--coconut-white-color);
+}
+.easy-image img {
+  z-index: 1;
+  bottom: 38px;
+  right: -182px;
+}
+.easy::after,
+.zero::after {
+  right: -390px;
+  background-color: var(--coconut-white-color);
+}
+.coming::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  left: -410px;
+  background-color: var(--coconut-white-color);
+}
+.easy img {
+  top: 295px;
+  right: -100px;
+}
+.coming img {
+  left: -170px;
+}
+.zero img {
+  top: 80px;
+  left: 250px;
+  z-index: 1;
+}
 .easy-image {
-  background: url(../images/easy-image-bg.png) center/cover no-repeat;
+  background: url(../imgs/easy-image-bg.png) center/cover no-repeat;
 }
 .coming-image {
-  background: url(../images/coming-image-bg.png) center/cover no-repeat;
+  background: url(../imgs/coming-image-bg.png) center/cover no-repeat;
 }
 .zero-image {
-  background: url(../images/zero-image-bg.png) center/cover no-repeat;
+  background: url(../imgs/zero-image-bg.png) center/cover no-repeat;
 }
 @media only screen and (max-width: 991px) {
   .hero-container {
@@ -144,16 +192,6 @@
     left: -127px;
     bottom: 40px;
   }
-  .circle-hero {
-    bottom: 40px;
-  }
-  .easy,
-  .zero {
-    flex-direction: column-reverse;
-  }
-  .coming {
-    flex-direction: column;
-  }
   .home-section {
     justify-content: center;
     align-content: center;
@@ -168,16 +206,6 @@
   }
   .home-section-content p {
     max-width: 573px;
-  }
-  .easy img {
-    top: 200px;
-  }
-  .coming img {
-    left: -580px;
-  }
-  .zero img {
-    top: 15px;
-    left: 176px;
   }
   .home-cards-wrapper {
     flex-direction: column;
@@ -196,14 +224,6 @@
   }
 }
 @media only screen and (max-width: 670px) {
-  .home-section::after,
-  .home-section::before {
-    display: none;
-  }
-  .easy img {
-    top: 162px;
-    left: 0;
-  }
   .hero-content {
     position: sticky;
     z-index: 1;
@@ -215,6 +235,10 @@
   .circle-hero {
     display: none;
   }
+  .home-section::after,
+  .home-section::before {
+    display: none;
+  }
   .home-card {
     flex-direction: column;
     row-gap: 24px;
@@ -224,5 +248,21 @@
   }
   .home-card-content {
     text-align: center;
+  }
+  .easy::after,
+  .zero::after,
+  .coming::before {
+    display: none;
+  }
+  .easy-image img {
+    left: 13px;
+    top: 200px;
+  }
+  .coming-image img {
+    top: 40px;
+    left: -155px;
+  }
+  .zero-image img{
+    left: 150px;
   }
 }

@@ -4,97 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style/output.css">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/location.css">
   <title>Scoot - Location</title>
 </head>
-<body>
-  <header>
-    <div class="header-container container d-flex items-center justify-between">
-      <label class="burger-icon d-none flex-col" for="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <input class="burger-input d-none" type="checkbox" id="burger" name="burger">
-      <div class="burger-menu d-none absolute d-flex flex-col justify-between ">
-        <nav class="burger-nav">
-          <ul class="d-flex flex-col">
-            <li><a href="../pages/about.html" class="space-mono bold cursor transition-6s">About</a></li>
-            <li><a href="../pages/location.html" class="space-mono bold cursor transition-6s active">Location</a></li>
-            <li><a href="../pages/careers.html" class="space-mono bold cursor transition-6s">Careers</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="button cursor transition-6s">Get Scootin</a>
-      </div>
-      <div class="logo-nav d-flex items-center justify-between">
-        <a href="../index.html" class="logo cursor"><img src="../images/header-logo.png" alt="logo"></a>
-        <nav class="nav">
-          <ul class="d-flex items-center justify-between">
-            <li><a href="../pages/about.html" class="space-mono bold font-15 cursor transition-6s">About</a></li>
-            <li><a href="../pages/location.html" class="space-mono bold font-15 cursor transition-6s active">Location</a></li>
-            <li><a href="../pages/careers.html" class="space-mono bold font-15 cursor transition-6s">Careers</a></li>
+<body class="max-w-full min-h-screen">
+  <header class="fixed bg-white top-0 left-0 z-50 w-full shadow-3xl">
+    <div class="header-container main-container flex items-center justify-between">
+      <div class="logo-nav flex items-center justify-center gap-x-14 max-tablet:w-full">
+        <div class="burger-bar hidden max-tablet:flex max-tablet:items-center max-tablet:justify-center max-tablet:flex-col max-tablet:gap-1 max-tablet:cursor-scoot">
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
+        </div>
+        <a href="../index.html" class="logo max-tablet:my-0 mx-auto">
+          <img src="../imgs/logo.svg" alt="logo">
+        </a>
+        <nav class="max-tablet:hidden">
+          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold ">
+            <li><a href="./about.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">About</a></li>
+            <li><a href="./location.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot active">Location</a></li>
+            <li><a href="./careers.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <a href="#" class="button header-button cursor transition-6s">Get Scootin</a>
+      <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
+        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot max-tablet:hidden">Get Scootin</a>
     </div>
   </header>
   <main>
     <section class="hero relative">
-      <div class="hero-container relative container d-flex items-center">
+      <div class="hero-container main-container flex items-center max-tablet:justify-center">
         <h1 class="text-white">Location</h1>
       </div>
-      <img class="absolute" src="../images/circle.svg" alt="circle">
+      <img class="absolute max-tablet:hidden" src="../imgs/circle.svg" alt="circle">
     </section>
     <section class="location">
-      <div class="location-container container">
-        <div class="location-map-mobile d-none">
-          <img src="../images/location-map-mobile.png" alt="location-map">
+      <div class="location-container main-container">
+        <div class="location-map-mobile hidden max-tablet:block">
+          <img class="max-tablet:w-full" src="../imgs/location-map-mobile.png" alt="location-map">
         </div>
-        <div class="location-map">
-          <img src="../images/location-map.png" alt="location-map">
+        <div class="location-map max-tablet:hidden">
+          <img src="../imgs/location-map.png" alt="location-map">
         </div>
-        <ul class="location-list d-none d-flex flex-col items-center">
-          <li class="d-flex items-center justify-center"><span href="#" class="text-dark-navy space-mono bold">New York</span></li>
-          <li class="d-flex items-center justify-center"><span href="#" class="text-dark-navy space-mono bold">London</span></li>
-          <li class="d-flex items-center justify-center"><span href="#" class="text-dark-navy space-mono bold">Jakarta</span></li>
-          <li class="d-flex items-center justify-center"><span href="#" class="text-dark-navy space-mono bold">Yokohama</span></l>
+        <ul class="location-list hidden max-tablet:flex max-tablet:flex-col max-tablet:items-center font-space-mono font-bold text-navy-scoot">
+          <li class="flex items-center justify-center"><span href="#">New York</span></li>
+          <li class="flex items-center justify-center"><span href="#">London</span></li>
+          <li class="flex items-center justify-center"><span href="#">Jakarta</span></li>
+          <li class="flex items-center justify-center"><span href="#">Yokohama</span></l>
         </ul>
-        <div class="location-content d-flex items-center justify-center flex-wrap">
+        <div class="location-content flex items-center justify-center flex-wrap max-laptop:text-center max-laptop:flex-col">
           <h2>Your City Not Listed?</h2>
-          <p class="lexend-deca text-grey font-15">If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
-          <a href="#" class="button cursor transition-6s">Message Us</a>
+          <p class="font-lexend-deca text-grey-scoot">If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
+          <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2 cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot">Message Us</a>
         </div>
       </div>
     </section>
     <section class="application">
-      <div class="application-container container d-flex items-center justify-between flex-wrap">
+      <div class="application-container main-container flex items-center justify-between flex-wrap max-laptop:justify-center max-laptop:text-center">
         <h2 class="text-white">Sign up and Scoot off today</h2>
-        <div class="install-app d-flex items-center justify-center flex-wrap">
-          <a href="#" class="cursor"><img src="../images/app-store.png" alt="app-store"></a>
-          <a href="#" class="cursor"><img src="../images/google-play.png" alt="google-play"></a>
+        <div class="install-app flex items-center justify-center flex-wrap">
+          <a href="#" class="cursor-scoot"><img src="../imgs/app-store.png" alt="app-store"></a>
+          <a href="#" class="cursor-scoot"><img src="../imgs/google-play.png" alt="google-play"></a>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="footer-container container d-flex items-center justify-between flex-wrap">
-      <div class="logo-nav-footer d-flex items-center justify-between text-grey">
-        <a href="../index.html" class="logo-footer cursor"><img src="../images/footer-logo.png" alt=""></a>
-        <nav class="nav">
-          <ul class="d-flex items-center justify-between">
-            <li><a href="../pages/about.html" class="space-mono bold font-15 cursor transition-6s">About</a></li>
-            <li><a href="../pages/location.html" class="space-mono bold font-15 cursor transition-6s active">Location</a></li>
-            <li><a href="../pages/careers.html" class="space-mono bold font-15 cursor transition-6s">Careers</a></li>
+    <div class="footer-container main-container flex items-center justify-between flex-wrap max-tablet:flex-col max-tablet:justify-center">
+      <div class="logo-nav-footer flex items-center justify-center gap-x-14 max-tablet:flex-col">
+        <a href="../index.html" class="logo-footer cursor"><img src="../imgs/footer-logo.png" alt=""></a>
+        <nav>
+          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold max-tablet:flex-col">
+            <li><a href="" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">About</a></li>
+            <li><a href="./location.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot active">Location</a></li>
+            <li><a href="./careers.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <div class="social-media d-flex items-center justify-center">
-        <a href="#" class="cursor"><i class="fa-brands fa-facebook-f text-grey transition-6s"></i></a>
-        <a href="#" class="cursor"><i class="fa-brands fa-x-twitter text-grey transition-6s"></i></a>
-        <a href="#" class="cursor"><i class="fa-brands fa-instagram text-grey transition-6s"></i></a>
-      </div>
+      <ul class="social-media flex items-center justify-center text-grey-scoot">
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-facebook-f transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-x-twitter transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-instagram transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+      </ul>
     </div>
   </footer>
 </body>

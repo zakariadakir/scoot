@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)),
-    url(../images/sections-bg.png) center/cover no-repeat;
+    url(../imgs/sections-bg.png) center/cover no-repeat;
 }
 .hero-container {
   min-height: 200px;
@@ -16,9 +16,6 @@
 .location-map {
   height: clamp(337px, 37.7vw, 543px);
 }
-.location-map img:nth-child(1) {
-  width: 100%;
-}
 .location-content {
   margin-top: clamp(40px, 8.33vw, 120px);
   gap: 40px;
@@ -30,10 +27,6 @@
   max-width: 445px;
 }
 @media only screen and (max-width: 991px) {
-  .location-content {
-    text-align: center;
-    flex-direction: column;
-  }
   .location-content h2 {
     max-width: 457px;
   }
@@ -42,23 +35,7 @@
   }
 }
 @media only screen and (max-width: 670px) {
-  .hero-container {
-    justify-content: center;
-  }
-  .hero img {
-    display: none;
-  }
-  .location-map {
-    display: none;
-  }
-  .location-map-mobile {
-    display: block;
-  }
-  .location-map-mobile img {
-    width: 100%;
-  }
   .location-list {
-    display: flex;
     margin: 40px auto;
     min-height: 336px;
     gap: 12px 0;

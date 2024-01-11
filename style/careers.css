@@ -1,9 +1,6 @@
 .hero {
-  background: linear-gradient(
-      var(--linear-gradient-color),
-      var(--linear-gradient-color)
-    ),
-    url(../images/sections-bg.png) center/cover no-repeat;
+  background: linear-gradient(var(--linear-gradient-color), var(--linear-gradient-color)),
+    url(../imgs/sections-bg.png) center/cover no-repeat;
 }
 .hero-container {
   min-height: 200px;
@@ -29,7 +26,7 @@
   width: clamp(311px, 30.9vw, 445px);
   height: clamp(311px, 30.9vw, 445px);
   border-radius: 50%;
-  background: url(../images/care-image.png) center/cover no-repeat;
+  background: url(../imgs/care-image.png) center/cover no-repeat;
 }
 .care::after {
   position: absolute;
@@ -61,6 +58,7 @@
   width: 240px;
   height: 240px;
   border-radius: 50%;
+  margin: 0 auto;
 }
 .join-card-image::after {
   position: absolute;
@@ -106,22 +104,9 @@
 .apply-content {
   width: 315px;
 }
-.apply-content p {
-  margin-top: 10px;
-}
 @media only screen and (max-width: 991px) {
-  .care {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-content: center;
-    row-gap: 56px;
-  }
-  .care-content {
-    text-align: center;
-  }
   .care-content h2 {
     max-width: 357px;
-    margin: 0 auto;
   }
   .care-content p {
     max-width: 573px;
@@ -132,27 +117,10 @@
   }
 }
 @media only screen and (max-width: 670px) {
-  .hero-container {
-    justify-content: center;
-  }
-  .hero img {
-    display: none;
-  }
   .care::after {
     display: none;
   }
   .care-image img {
-    right: -432px;
-  }
-  .apply-list li {
-    justify-content: center;
-    gap: 16px 0;
-  }
-  .apply-content {
-    text-align: center;
-  }
-  .apply-list a {
-    flex-grow: 1;
-    text-align: center;
+    right: -12px;
   }
 }
