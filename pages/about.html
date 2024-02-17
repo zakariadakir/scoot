@@ -1,170 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../style/output.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/about.css">
-    <title>Scoot - Careers</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/about.css">
+  <title>Scoot - About</title>
+</head>
 <body>
-  <header class="fixed bg-white top-0 left-0 z-50 w-full shadow-3xl">
-    <div class="header-container main-container flex items-center justify-between">
-      <div class="logo-nav flex items-center justify-center gap-x-14 max-tablet:w-full">
-        <div class="burger-bar hidden max-tablet:flex max-tablet:items-center max-tablet:justify-center max-tablet:flex-col max-tablet:gap-1 max-tablet:cursor-scoot">
-          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
-          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
-          <span class="max-tablet:bg-yellow-scoot max-tablet:h-1 max-tablet:w-full"></span>
-        </div>
-        <a href="../index.html" class="logo max-tablet:my-0 mx-auto">
-          <img src="../imgs/logo.svg" alt="logo">
+  <header>
+    <div class="header-container container font-space flex items-center justify-between">
+      <div class="logo-nav flex items-center">
+        <a href="../index.html" class="logo cursor">
+          <img src="../imgs/header-logo.svg" alt="logo">
         </a>
-        <nav class="max-tablet:hidden">
-          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold ">
-            <li><a href="./about.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot active">About</a></li>
-            <li><a href="./location.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">Location</a></li>
-            <li><a href="./careers.html" class="cursor-scoot transition-colors duration-700 hover:text-yellow-scoot">Careers</a></li>
+        <nav>
+          <ul class="header-links flex">
+            <li><a href="./about.html" class="cursor active" aria-label="About">About</a></li>
+            <li><a href="./location.html" class="cursor" aria-label="Location">Location</a></li>
+            <li><a href="./careers.html" class="cursor" aria-label="Careers">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <a href="#" class="bg-yellow-scoot py-3.5 px-10 font-space-mono font-bold text-white border-yellow-scoot border-2
-        cursor-scoot transition-all duration-700 hover:bg-transparent hover:text-yellow-scoot max-tablet:hidden">Get Scootin</a>
+      <a href="#" class="button" aria-label="Get Scooting">Get Scootin</a>
     </div>
   </header>
   <main>
-    <section class="hero relative">
-      <div class="hero-container main-container flex items-center max-tablet:justify-center">
-        <h1 class="text-white">About</h1>
-      </div>
-      <img class="absolute max-tablet:hidden" src="../imgs/circle.svg" alt="circle">
-    </section>
-    <section class="mobility main-container flex justify-between items-center flex-wrap relative max-laptop:flex-col-reverse max-laptop:justify-center max-laptop:items-center max-laptop:gap-y-14">
-      <div class="mobility-content max-laptop:text-center">
-        <h2 class="my-0 mx-auto">Care to join our mission?</h2>
-        <p class="text-grey-scoot font-15 font-lexend-deca">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
-      </div>
-      <div class="mobility-image relative">
-        <img class="absolute" src="../imgs/care-right-arrow.svg" alt="yellow-right-arrow">
+    <section class="hero">
+      <div class="hero-container container flex items-center">
+        <h1 class="font-space">About</h1>
       </div>
     </section>
-    <section class="urban main-container flex justify-between items-center flex-wrap relative max-laptop:flex-col-reverse max-laptop:justify-center max-laptop:items-center max-laptop:gap-y-14">
-      <div class="urban-image relative">
-        <img class="absolute" src="../imgs/care-left-arrow.svg" alt="yellow-left-arrow">
-      </div>
-      <div class="urban-content max-laptop:text-center">
-        <h2 class="my-0 mx-auto">Better urban living</h2>
-        <p class="text-grey-scoot font-15 font-lexend-deca">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.</p>
+    <section class="mobility container flex items-center justify-between">
+      <article class="mobility-content">
+        <h2 class="font-space">Mobility for the digital era</h2>
+        <p class="font-lexend">Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.</p>
+      </article>
+      <img src="../imgs/about/mobility-image.png" alt="care-imag" loading="lazy">
+    </section>
+    <section class="urban container flex items-center justify-between flex-wrap">
+      <img src="../imgs/about/urban-image.png" alt="care-imag" loading="lazy">
+      <article class="urban-content">
+        <h2 class="font-space">Better urban living</h2>
+        <p class="font-lexend">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.</p>
+      </article>
+    </section>
+    <section class="join container">
+      <h2 class="font-space">Why join us?</h2>
+      <div class="join-cards-container flex items-center justify-center flex-wrap">
+        <div class="join-card">
+          <div class="join-card-img">
+            <img src="../imgs/about/join-card-one.png" alt="join-card" loading="lazy">
+          </div>
+          <div class="join-card-content">
+            <h3 class="font-space">Our tech</h3>
+            <p class="font-lexend">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+          </div>
+        </div>
+        <div class="join-card">
+          <div class="join-card-img">
+            <img src="../imgs/about/join-card-two.png" alt="join-card" loading="lazy">
+          </div>
+          <div class="join-card-content">
+            <h3 class="font-space">Our integrity</h3>
+            <p class="font-lexend">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+          </div>
+        </div>
+        <div class="join-card">
+          <div class="join-card-img">
+            <img src="../imgs/about/join-card-three.png" alt="join-card" loading="lazy">
+          </div>
+          <div class="join-card-content">
+            <h3 class="font-space">Our community</h3>
+            <p class="font-lexend">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="join main-container text-center">
-      <h2>Our values</h2>
-      <div class="join-cards-wrapper flex items-center justify-center flex-wrap">
-        <article class="join-card">
-          <div class="join-card-image relative">
-            <img src="../imgs/join-card-one.png" alt="join-card-img">
-          </div>
-          <div class="join-card-content text-center">
-            <h3 class="text-navy-scoot font-space-mono">Our tech</h3>
-            <p class="text-grey-scoot font-lexend-deca text-15">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
-          </div>
-        </article>
-        <article class="join-card">
-          <div class="join-card-image relative">
-            <img src="../imgs/join-card-two.png" alt="join-card-img">
-          </div>
-          <div class="join-card-content text-center">
-            <h3 class="text-navy-scoot font-space-mono">Our integrity</h3>
-            <p class="text-grey-scoot font-lexend-deca text-15">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
-          </div>
-        </article>
-        <article class="join-card">
-          <div class="join-card-image relative">
-            <img src="../imgs/join-card-three.png" alt="join-card-img">
-          </div>
-          <div class="join-card-content text-center">
-            <h3 class="text-navy-scoot font-space-mono">Our community</h3>
-            <p class="text-grey-scoot font-lexend-deca text-15">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
-          </div>
-        </article>
+    <section class="faq container">
+      <h2 class="font-space">FAQs</h2>
+      <div class="faq-container flex justify-center flex-wrap">
+        <h3 class="font-space">How it works</h3>
+        <div class="details-container flex">
+          <details>
+            <summary class="cursor font-space flex justify-between">How it works</summary>
+            <p class="font-lexend">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+          <details>
+            <summary class="cursor font-space flex justify-between">Can I find a nearby Scoots?</summary>
+            <p class="font-lexend">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+          <details>
+            <summary class="cursor font-space flex justify-between">Can I find a nearby Scoots?</summary>
+            <p class="font-lexend">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+        </div>
       </div>
-    </section>
-    <section class="faq main-container">
-      <h2 class="text-center">FAQs</h2>
-      <div class="question flex justify-between max-laptop:flex-wrap max-laptop:justify-center">
-        <h3 class="text-navy-scoot font-space-mono font-bold">How it works</h3>
-        <ul class="answer">
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">How do I download the app?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
-            </details>
-          </li>
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">Can I find a nearby Scoots?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
-            </details>
-          </li>
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">Do I need a license to ride?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
-            </details>
-          </li>          
-        </ul>
-      </div>
-      <div class="question flex justify-between max-laptop:flex-wrap max-laptop:justify-center">
-        <h3 class="text-navy-scoot font-bold font-space-mono">Safe driving</h3>
-        <ul class="answer">
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">Should I wear a helmet?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
-            </details>
-          </li>
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">How about the rules & regulations?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
-            </details>
-          </li>
-          <li>
-            <details class="text-navy-scoot duration-700">
-              <summary class="font-space-mono font-bold flex justify-between cursor-scoot">What if I damage my Scoot?</summary>
-              <p class="text-navy-scoot font-lexend-deca text-15">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
-            </details>
-          </li>
-        </ul>
+      <div class="faq-container flex justify-center flex-wrap">
+        <h3 class="font-space">Safe driving</h3>
+        <div class="details-container flex">
+          <details>
+            <summary class="cursor font-space flex justify-between">Should I wear a helmet?</summary>
+            <p class="font-lexend">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+          <details>
+            <summary class="cursor font-space flex justify-between">How about the rules & regulations?</summary>
+            <p class="font-lexend">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+          <details>
+            <summary class="cursor font-space flex justify-between">How about the rules & regulations?</summary>
+            <p class="font-lexend">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+          </details>
+        </div>
       </div>
     </section>
     <section class="application">
-      <div class="application-container main-container flex items-center justify-between flex-wrap max-laptop:justify-center max-laptop:text-center">
-        <h2 class="text-white">Sign up and Scoot off today</h2>
-        <div class="install-app flex items-center justify-center flex-wrap">
-          <a href="#" class="cursor-scoot"><img src="../imgs/app-store.png" alt="app-store"></a>
-          <a href="#" class="cursor-scoot"><img src="../imgs/google-play.png" alt="google-play"></a>
+      <div class="application-container container flex justify-between flex-wrap">
+        <h2 class="font-space">Sign up and Scoot off today</h2>
+        <div class="get-application flex items-center justify-center flex-wrap">
+          <a href="#" class="cursor" aria-label="app-store">
+            <img src="../imgs/app-store.png" alt="app-store" loading="lazy">
+          </a>
+          <a href="#" class="cursor" aria-label="google-play">
+            <img src="../imgs/google-play.png" alt="google-play" loading="lazy">
+          </a>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="footer-container main-container flex items-center justify-between flex-wrap max-tablet:flex-col max-tablet:justify-center">
-      <div class="logo-nav-footer flex items-center justify-center gap-x-14 max-tablet:flex-col">
-        <a href="../index.html" class="logo-footer cursor"><img src="../imgs/footer-logo.png" alt=""></a>
+    <div class="footer-container container flex items-center justify-between">
+      <div class="footer-logo-nav flex items-center font-space">
+        <a href="../index.html" class="footer-logo cursor">
+          <img src="../imgs/footer-logo.png" alt="logo">
+        </a>
         <nav>
-          <ul class="flex items-center justify-center gap-x-8 text-grey-scoot font-space-mono font-bold max-tablet:flex-col">
-            <li><a href="./about.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot active">About</a></li>
-            <li><a href="./location.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">Location</a></li>
-            <li><a href="./careers.html" class="cursor-scoot transition-all duration-700 hover:text-yellow-scoot">Careers</a></li>
+          <ul class="footer-links flex">
+            <li><a href="./about.html" class="cursor active" aria-label="About">About</a></li>
+            <li><a href="./location.html" class="cursor" aria-label="Location">Location</a></li>
+            <li><a href="./careers.html" class="cursor" aria-label="Careers">Careers</a></li>
           </ul>
         </nav>
       </div>
-      <ul class="social-media flex items-center justify-center text-grey-scoot">
-        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-facebook-f transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
-        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-x-twitter transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
-        <li><a href="#" class="cursor-scoot"><i class="fa-brands fa-instagram transition-all duration-700 hover:text-yellow-scoot"></i></a></li>
+      <ul class="social-media flex">
+        <li><a href="#" class="cursor" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" class="cursor" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" class="cursor" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </div>
   </footer>
