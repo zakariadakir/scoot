@@ -234,7 +234,7 @@ h2 {
   .mobility::before {
     top: 204px;
   }
-  .urban::before{
+  .urban::before {
     left: -379px;
     top: 0;
     transform: translateY(0);
@@ -263,7 +263,8 @@ h2 {
   .hero-container {
     justify-content: center;
   }
-  .mobility::after,.urban::before {
+  .mobility::after,
+  .urban::before {
     display: none;
   }
   .mobility::before {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/home.css" />
@@ -14,12 +14,14 @@
   <body>
     <header>
       <div
-      class="header-container container font-space flex items-center justify-between"
+        class="header-container container font-space flex items-center justify-between"
       >
-      <button class="menu-button"><img src="./imgs/icon-menu-open.svg" alt="menu-icon"></button>
+        <button class="menu-button">
+          <img src="./imgs/icon-menu-open.svg" alt="menu-icon" loading="lazy" />
+        </button>
         <div class="logo-nav flex items-center">
           <a href="./index.html" class="logo cursor">
-            <img src="./imgs/header-logo.svg" alt="logo" />
+            <img src="./imgs/header-logo.svg" alt="logo" loading="lazy" />
           </a>
           <nav>
             <ul class="header-links flex">
@@ -66,10 +68,12 @@
           </article>
         </div>
       </section>
-      <section class="home-cards container flex items-center justify-between flex-wrapr">
+      <section
+        class="home-cards container flex items-center justify-between flex-wrapr"
+      >
         <article class="home-card">
           <div class="home-card-content">
-            <h3 class="font-space">Locate with app</h3>
+            <h2 class="font-space">Locate with app</h2>
             <p class="font-lexend">
               Use the app to find the nearest scooter to you. We are
               continuously placing scooters in the areas with most demand, so
@@ -77,9 +81,9 @@
             </p>
           </div>
         </article>
-        <article class="home-card ">
+        <article class="home-card">
           <div class="home-card-content">
-            <h3 class="font-space">Pick your scooter</h3>
+            <h2 class="font-space">Pick your scooter</h2>
             <p class="font-lexend">
               We show the most important info for the scooters closest to you.
               So you know how much charge they have left and can see roughly how
@@ -90,7 +94,7 @@
         <article class="home-card">
           <span class="gray-line"></span>
           <div class="home-card-content">
-            <h3 class="font-space">Enjoy the ride</h3>
+            <h2 class="font-space">Enjoy the ride</h2>
             <p class="font-lexend">
               Scan the QR code and the bike will unlock. Retract the cable lock,
               put on a helmet, and you’re off! Always lock bikes away from
@@ -153,10 +157,14 @@
             class="get-application flex items-center justify-center flex-wrap"
           >
             <a href="#" class="cursor" aria-label="app-store">
-              <img src="./imgs/app-store.png" alt="app-store" />
+              <img src="./imgs/app-store.png" alt="app-store" loading="lazy" />
             </a>
             <a href="#" class="cursor" aria-label="google-play">
-              <img src="./imgs/google-play.png" alt="google-play" />
+              <img
+                src="./imgs/google-play.png"
+                alt="google-play"
+                loading="lazy"
+              />
             </a>
           </div>
         </div>
@@ -166,7 +174,7 @@
       <div class="footer-container container flex items-center justify-between">
         <div class="footer-logo-nav flex items-center font-space">
           <a href="./index.html" class="footer-logo cursor">
-            <img src="./imgs/footer-logo.png" alt="logo" />
+            <img src="./imgs/footer-logo.png" alt="logo" loading="lazy" />
           </a>
           <nav>
             <ul class="footer-links flex">
